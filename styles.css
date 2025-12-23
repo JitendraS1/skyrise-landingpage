@@ -443,6 +443,42 @@ p {
     background: white;
 }
 
+/* Legal Documents Section */
+.legal-docs {
+    padding: 100px 0;
+    background: var(--bg-color);
+}
+
+.legal-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.legal-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.legal-list {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.legal-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.legal-list li i {
+    color: var(--teal-dark);
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
 .layout-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
