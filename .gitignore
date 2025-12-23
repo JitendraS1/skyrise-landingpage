@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.env
+venv/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# PDF and extracted content
+*.pdf
+extracted_content/
+temp/
+*.png
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build outputs
+dist/
+build/
+out/
