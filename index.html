@@ -3,28 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sky Rise Residential Township | More Than 10 Acres</title>
+    <title>Sky Rise Residential Township | Govt Approved Plots</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Header Section -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-info">
+                <span><i class="fas fa-phone-alt"></i> +91 98765 43210</span>
+                <span><i class="fas fa-envelope"></i> info@skyrise-township.com</span>
+            </div>
+            <div class="top-social">
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </div>
+
     <header class="header">
         <div class="container">
             <div class="logo">
                 <img src="images/skyrise-logo.png" alt="Sky Rise Logo" class="logo-img">
-                <h1>Sky Rise<span>Residential Township</span></h1>
+                <div class="logo-text">
+                    <h1>Sky Rise<span>Residential Township</span></h1>
+                    <small>Nagar Niyojak Authority Approved</small>
+                </div>
             </div>
             <nav class="nav-menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#highlights">Highlights</a></li>
                     <li><a href="#amenities">Amenities</a></li>
-                    <li><a href="#layout">Layout Plan</a></li>
-                    <li><a href="#legal">Legal Documents</a></li>
+                    <li><a href="#layout">Layout</a></li>
                     <li><a href="#location">Location</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" class="nav-btn">Enquire Now</a></li>
                 </ul>
             </nav>
             <div class="mobile-menu-toggle">
@@ -33,299 +47,274 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
+        <div class="container hero-container">
             <div class="hero-content">
-                <h1>Sky Rise Residential Township</h1>
-                <p>More Than 10 Acres</p>
-                <div class="hero-btns">
-                    <a href="#contact" class="btn btn-primary">Book Your Plot</a>
-                    <a href="#layout" class="btn btn-secondary">View Layout Plan</a>
+                <span class="badge">More Than 10 Acres</span>
+                <h1>Build Your Dream Home in <br><span>Dholera Smart City</span></h1>
+                <p>Government Approved Residential Plots with 360° Connectivity.</p>
+                <ul class="hero-list">
+                    <li><i class="fas fa-check"></i> 100% Legal Verification</li>
+                    <li><i class="fas fa-check"></i> Immediate Registry</li>
+                    <li><i class="fas fa-check"></i> Loan Facility Available</li>
+                </ul>
+                <div class="hero-btns mobile-only">
+                    <a href="#contact" class="btn btn-primary">Book Site Visit</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2>About Our Township</h2>
-                <p>Experience luxury living in the heart of nature</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Welcome to Sky Rise Residential Township, a premium residential development spanning over 10 acres. Located strategically near Dholera, our township offers the perfect blend of modern amenities and natural beauty.</p>
-                    <p>Our project is approved by Nagar Niyojak Authority and all legal documents are in place, ensuring a secure investment for your future.</p>
-                    <div class="features">
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Nagar Niyojak Authority Plan Pass</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>All Legal Documents Verified</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Prime Location Connectivity</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="images/township-view.jpg" alt="Sky Rise Township View">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3D View Section -->
-    <section class="three-d-view">
-        <div class="container">
-            <div class="section-header">
-                <h2>3D View</h2>
-                <p>Visualize your dream home in our planned community</p>
-            </div>
-            <div class="three-d-gallery">
-                <div class="three-d-item">
-                    <img src="images/3d-view-1.jpg" alt="3D View 1">
-                </div>
-                <div class="three-d-item">
-                    <img src="images/3d-view-2.jpg" alt="3D View 2">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Amenities Section -->
-    <section id="amenities" class="amenities">
-        <div class="container">
-            <div class="section-header">
-                <h2>Amenities</h2>
-                <p>Premium facilities for a comfortable lifestyle</p>
-            </div>
-            <div class="amenities-grid">
-                <div class="amenity-item">
-                    <i class="fas fa-swimming-pool"></i>
-                    <h3>Swimming Pool</h3>
-                    <p>Olympic-sized pool for recreation and fitness</p>
-                </div>
-                <div class="amenity-item">
-                    <i class="fas fa-tree"></i>
-                    <h3>Landscaped Gardens</h3>
-                    <p>Beautifully designed green spaces for relaxation</p>
-                </div>
-                <div class="amenity-item">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>24/7 Security</h3>
-                    <p>Round-the-clock security for peace of mind</p>
-                </div>
-                <div class="amenity-item">
-                    <i class="fas fa-car"></i>
-                    <h3>Underground Parking</h3>
-                    <p>Secure parking space for all residents</p>
-                </div>
-                <div class="amenity-item">
-                    <i class="fas fa-dumbbell"></i>
-                    <h3>Fitness Center</h3>
-                    <p>Modern gym equipment for health enthusiasts</p>
-                </div>
-                <div class="amenity-item">
-                    <i class="fas fa-utensils"></i>
-                    <h3>Club House</h3>
-                    <p>Elegant dining and event space for celebrations</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Layout Plan Section -->
-    <section id="layout" class="layout-plan">
-        <div class="container">
-            <div class="section-header">
-                <h2>Layout Plan</h2>
-                <p>Carefully planned community design</p>
-            </div>
-            <div class="layout-content">
-                <div class="layout-image">
-                    <img src="images/layout-plan.jpg" alt="Township Layout Plan">
-                </div>
-                <div class="layout-info">
-                    <h3>Plot Area Table</h3>
-                    <div class="plot-table">
-                        <div class="plot-row">
-                            <div class="plot-number">Plot 1-50</div>
-                            <div class="plot-size">1200 sq.ft.</div>
-                        </div>
-                        <div class="plot-row">
-                            <div class="plot-number">Plot 51-100</div>
-                            <div class="plot-size">1500 sq.ft.</div>
-                        </div>
-                        <div class="plot-row">
-                            <div class="plot-number">Plot 101-150</div>
-                            <div class="plot-size">1800 sq.ft.</div>
-                        </div>
-                        <div class="plot-row">
-                            <div class="plot-number">Plot 151-200</div>
-                            <div class="plot-size">2000 sq.ft.</div>
-                        </div>
-                        <div class="plot-row">
-                            <div class="plot-number">Plot 201-250</div>
-                            <div class="plot-size">2200 sq.ft.</div>
-                        </div>
-                        <div class="plot-row">
-                            <div class="plot-number">Plot 251-300</div>
-                            <div class="plot-size">2500 sq.ft.</div>
-                        </div>
-                    </div>
-                    <a href="#" class="btn btn-primary">Download Full Layout Plan</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Legal Documents Section -->
-    <section id="legal" class="legal-docs">
-        <div class="container">
-            <div class="section-header">
-                <h2>Legal Documents</h2>
-                <p>Verified and approved documentation for your peace of mind</p>
-            </div>
-            <div class="legal-content">
-                <div class="legal-image">
-                    <img src="images/legal-docs.jpg" alt="Legal Documents">
-                </div>
-                <div class="legal-info">
-                    <h3>Project Approvals & Certifications</h3>
-                    <ul class="legal-list">
-                        <li><i class="fas fa-check-circle"></i> Nagar Niyojak Authority Plan Pass</li>
-                        <li><i class="fas fa-check-circle"></i> All Legal Documents Verified</li>
-                        <li><i class="fas fa-check-circle"></i> Government Approved Township</li>
-                        <li><i class="fas fa-check-circle"></i> Clear Title Deeds</li>
-                        <li><i class="fas fa-check-circle"></i> RERA Registration</li>
-                        <li><i class="fas fa-check-circle"></i> Environmental Clearance</li>
-                    </ul>
-                    <a href="#" class="btn btn-primary">Download Legal Documents</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Location Section -->
-    <section id="location" class="location">
-        <div class="container">
-            <div class="section-header">
-                <h2>Location Map</h2>
-                <p>Strategically located for easy connectivity</p>
-            </div>
-            <div class="location-content">
-                <div class="map-container">
-                    <img src="images/location-map.jpg" alt="Location Map">
-                </div>
-                <div class="location-info">
-                    <h3>Dholera 360 Connectivity</h3>
-                    <ul class="connectivity-list">
-                        <li><i class="fas fa-map-marker-alt"></i> Kotra Toll Plaza - 15 mins</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Blackbuck Sanctuary - 20 mins</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Kalpasar Dam - 25 mins</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Make in India Chip - 30 mins</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Make in India Ship - 35 mins</li>
-                    </ul>
-                    <p>Just 25 minutes from major city centers, Sky Rise Township offers excellent connectivity to all important locations.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Contact Us</h2>
-                <p>Get in touch for more information</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Our Location</h3>
-                            <p>Sky Rise Residential Township, Dholera Smart City</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Call Us</h3>
-                            <p>+91 98765 43210</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email Us</h3>
-                            <p>info@skyrise-township.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
+            
+            <div class="hero-form-wrapper">
+                <div class="hero-form">
+                    <h3><i class="fas fa-paper-plane"></i> Book Your Plot</h3>
+                    <p>Fill the details to get the Price List</p>
                     <form>
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" placeholder="Full Name *" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="tel" placeholder="Mobile Number *" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" placeholder="Your Phone">
+                            <select required>
+                                <option value="" disabled selected>Select Plot Size</option>
+                                <option value="1200">1200 Sq.ft</option>
+                                <option value="1500">1500 Sq.ft</option>
+                                <option value="1800">1800 Sq.ft</option>
+                                <option value="2500">2500 Sq.ft</option>
+                            </select>
                         </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary btn-block">Request Call Back</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <section id="highlights" class="highlights">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="images/skyrise-logo.png" alt="Sky Rise Logo" class="logo-img">
-                    <h2>Sky Rise<span>Residential Township</span></h2>
-                    <p>More Than 10 Acres</p>
+            <div class="section-header">
+                <h2>Project Highlights</h2>
+                <p>Why Sky Rise is the Best Investment Choice</p>
+            </div>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <i class="fas fa-file-signature"></i>
+                    <h3>Govt Approved</h3>
+                    <p>Nagar Niyojak Authority Plan Pass & RERA Registered.</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-road"></i>
+                    <h3>Wide Roads</h3>
+                    <p>30ft to 60ft wide internal RCC roads with street lights.</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-rupee-sign"></i>
+                    <h3>Easy Finance</h3>
+                    <p>Bank loan facility available from major nationalized banks.</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Prime Location</h3>
+                    <p>Located on Main Highway near Dholera SIR.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="sub-heading">About Project</div>
+                    <h2>Experience Luxury in Nature's Lap</h2>
+                    <p>Welcome to Sky Rise Residential Township, a premium development spanning over 10 acres. Strategically located near Dholera, we offer the perfect blend of modern amenities and natural beauty.</p>
+                    <p>Our project is fully approved ensuring a secure investment for your future. Whether you are looking for an investment or a place to settle, Sky Rise offers high appreciation potential.</p>
+                    <a href="#layout" class="btn btn-secondary text-dark">View Master Plan</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/township-view.jpg" alt="Sky Rise Township View">
+                    <div class="experience-badge">
+                        <span>10+</span>
+                        <p>Acres of Land</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="amenities" class="amenities">
+        <div class="container">
+            <div class="section-header">
+                <h2>World Class Amenities</h2>
+                <p>Designed for a premium lifestyle</p>
+            </div>
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <div class="icon-box"><i class="fas fa-torii-gate"></i></div>
+                    <h3>Grand Entrance</h3>
+                </div>
+                <div class="amenity-item">
+                    <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
+                    <h3>24/7 Security</h3>
+                </div>
+                <div class="amenity-item">
+                    <div class="icon-box"><i class="fas fa-tree"></i></div>
+                    <h3>Lush Green Parks</h3>
+                </div>
+                <div class="amenity-item">
+                    <div class="icon-box"><i class="fas fa-water"></i></div>
+                    <h3>Water Connection</h3>
+                </div>
+                <div class="amenity-item">
+                    <div class="icon-box"><i class="fas fa-bolt"></i></div>
+                    <h3>Electricity</h3>
+                </div>
+                <div class="amenity-item">
+                    <div class="icon-box"><i class="fas fa-users"></i></div>
+                    <h3>Community Hall</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="location">
+        <div class="container">
+            <div class="section-header">
+                <h2>Location Advantage</h2>
+                <p>Connectivity that matters</p>
+            </div>
+            <div class="location-content">
+                <div class="location-list-wrapper">
+                    <ul class="location-list">
+                        <li>
+                            <span class="time">15 Min</span>
+                            <span class="place">From Kotra Toll Plaza</span>
+                        </li>
+                        <li>
+                            <span class="time">20 Min</span>
+                            <span class="place">From Blackbuck Sanctuary</span>
+                        </li>
+                        <li>
+                            <span class="time">25 Min</span>
+                            <span class="place">From Kalpasar Dam</span>
+                        </li>
+                        <li>
+                            <span class="time">30 Min</span>
+                            <span class="place">From Make in India Chip Plant</span>
+                        </li>
+                        <li>
+                            <span class="time">35 Min</span>
+                            <span class="place">From Make in India Ship Yard</span>
+                        </li>
+                        <li>
+                            <span class="time">25 Min</span>
+                            <span class="place">From Major City Centers</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="map-container">
+                    <img src="images/location-map.jpg" alt="Location Map">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="layout" class="layout-plan">
+        <div class="container">
+            <div class="section-header">
+                <h2>Layout Plan</h2>
+            </div>
+            <div class="layout-content">
+                <div class="layout-image">
+                    <img src="images/layout-plan.jpg" alt="Township Layout Plan">
+                </div>
+                <div class="layout-info">
+                    <h3>Available Plot Sizes</h3>
+                    <table class="plot-table-styled">
+                        <thead>
+                            <tr>
+                                <th>Plot Range</th>
+                                <th>Size (Sq. Ft.)</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Plot 1-50</td>
+                                <td>1200</td>
+                                <td><span class="status available">Available</span></td>
+                            </tr>
+                            <tr>
+                                <td>Plot 51-100</td>
+                                <td>1500</td>
+                                <td><span class="status few">Few Left</span></td>
+                            </tr>
+                            <tr>
+                                <td>Plot 101-150</td>
+                                <td>1800</td>
+                                <td><span class="status available">Available</span></td>
+                            </tr>
+                            <tr>
+                                <td>Plot 151-200</td>
+                                <td>2500</td>
+                                <td><span class="status sold">Sold Out</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="layout-cta">
+                        <a href="#contact" class="btn btn-primary">Download Map PDF</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Project Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <img src="images/3d-view-1.jpg" alt="View 1">
+                <img src="images/3d-view-2.jpg" alt="View 2">
+                <img src="images/amenities.jpg" alt="View 3">
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="images/skyrise-logo.png" alt="Logo" class="footer-logo-img">
+                    <p>Sky Rise Residential Township offers premium plots with secure documentation and world-class amenities.</p>
                 </div>
                 <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#amenities">Amenities</a></li>
+                        <li><a href="#about">About Us</a></li>
                         <li><a href="#layout">Layout Plan</a></li>
-                        <li><a href="#legal">Legal Documents</a></li>
-                        <li><a href="#location">Location</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#legal">Legal Docs</a></li>
                     </ul>
                 </div>
-                <div class="footer-social">
-                    <h3>Follow Us</h3>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Sky Rise Township, Dholera Smart City</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope"></i> info@skyrise-township.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Sky Rise Residential Township. All Rights Reserved. | Nagar Niyojak Authority Plan Pass</p>
+                <p>&copy; 2026 Sky Rise Residential Township. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
+
+    <div class="mobile-sticky-footer">
+        <a href="tel:+919876543210" class="sticky-btn call"><i class="fas fa-phone-alt"></i> Call Now</a>
+        <a href="#contact" class="sticky-btn enquire"><i class="fas fa-envelope"></i> Enquire</a>
+    </div>
 
     <script src="script.js"></script>
 </body>
