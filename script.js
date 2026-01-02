@@ -37,19 +37,41 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Form Submission
-const contactForm = document.querySelector('.contact-form form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
+const heroForm = document.querySelector('.hero-form form');
+if (heroForm) {
+    heroForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
         // Get form values
         const name = this.querySelector('input[type="text"]').value;
-        const email = this.querySelector('input[type="email"]').value;
         const phone = this.querySelector('input[type="tel"]').value;
-        const message = this.querySelector('textarea').value;
         
         // Simple validation
-        if (name && email) {
+        if (name && phone) {
+            // In a real application, you would send this data to a server
+            alert('Thank you for your interest! We will contact you soon.');
+            this.reset();
+        } else {
+            alert('Please fill in all required fields.');
+        }
+    });
+}
+
+// Contact Form Submission
+const contactUsForm = document.getElementById('contactUsForm');
+if (contactUsForm) {
+    contactUsForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form values
+        const name = this.querySelector('input[name="name"]').value;
+        const phone = this.querySelector('input[name="phone"]').value;
+        const email = this.querySelector('input[name="email"]').value;
+        const enquiryType = this.querySelector('select[name="enquiry-type"]').value;
+        const message = this.querySelector('textarea[name="message"]').value;
+        
+        // Simple validation
+        if (name && phone && email && enquiryType && message) {
             // In a real application, you would send this data to a server
             alert('Thank you for your message! We will contact you soon.');
             this.reset();

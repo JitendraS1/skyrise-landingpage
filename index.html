@@ -34,11 +34,12 @@
             <nav class="nav-menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#highlights">Highlights</a></li>
                     <li><a href="#amenities">Amenities</a></li>
                     <li><a href="#layout">Layout</a></li>
                     <li><a href="#location">Location</a></li>
-                    <li><a href="#contact" class="nav-btn">Enquire Now</a></li>
+                    <li><a href="#contact-form" class="nav-btn">Contact Us</a></li>
                 </ul>
             </nav>
             <div class="mobile-menu-toggle">
@@ -282,6 +283,55 @@
         </div>
     </section>
 
+    <section id="contact-form" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Reach out to us for more information</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Sky Rise Township, Dholera Smart City</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope"></i> info@skyrise-township.com</p>
+                    <div class="contact-hours">
+                        <h4>Office Hours</h4>
+                        <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                        <p>Sunday: 10:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactUsForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Full Name *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Phone Number *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email Address *" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="enquiry-type" required>
+                                <option value="" disabled selected>Select Enquiry Type</option>
+                                <option value="plot-info">Plot Information</option>
+                                <option value="site-visit">Site Visit</option>
+                                <option value="payment-plan">Payment Plan</option>
+                                <option value="location">Location Details</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message *" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer id="contact" class="footer">
         <div class="container">
             <div class="footer-top">
@@ -296,6 +346,7 @@
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#layout">Layout Plan</a></li>
                         <li><a href="#legal">Legal Docs</a></li>
+                        <li><a href="#contact-form">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
