@@ -122,3 +122,50 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     }
 });
+
+// Download Map PDF functionality
+const downloadPdfBtn = document.querySelector('.download-pdf-btn');
+
+if (downloadPdfBtn) {
+    downloadPdfBtn.addEventListener('click', async function(e) {
+        e.preventDefault();
+        console.log('Download PDF button clicked');
+        // Define the path to your PDF
+        const pdfUrl = 'images/skyrise-residential-township-map.pdf';
+        const fileName = 'SkyRise-Residential-Township-Map.pdf';
+
+        try {
+            // Optional: Show loading state (e.g., change button text)
+            const originalText = downloadPdfBtn.textContent;
+            downloadPdfBtn.textContent = 'Downloading...';
+            downloadPdfBtn.style.opacity = '0.7';
+
+            // Check if file exists before trying to download
+            const response = await fetch(pdfUrl, { method: 'HEAD' });
+
+            if (response.ok) {
+                // File exists, proceed with download
+                const link = document.createElement('a');
+                link.href = pdfUrl;
+                link.download = fileName;
+                link.target = '_blank';
+                
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            } else {
+                throw new Error('File not found');
+            }
+        } catch (error) {
+            console.error('Download failed:', error);
+            alert('Sorry, the map PDF is currently unavailable. Please contact support.');
+        } finally {
+            // Reset button state
+            downloadPdfBtn.textContent = originalText || 'Download PDF'; // Fallback text if original was empty
+             if (typeof originalText !== 'undefined') { //Check if originalText is defined before using it
+                 downloadPdfBtn.textContent = originalText;
+             }
+            downloadPdfBtn.style.opacity = '1';
+        }
+    });
+}
